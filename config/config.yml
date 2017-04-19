@@ -1,0 +1,82 @@
+title: Sample config
+bases:
+  docker: 10.0.75.1
+     
+
+colors:
+  default:
+    - '337ab7'
+    - '5cb85c'
+    - '5bc0de'
+    - 'f0ad4e'
+    - 'd9534f'
+  pack:
+     - 'DD1E2F'
+     - 'EBB035'
+     - '06A2CB'
+     - '218559'
+     - 'D0C6B1'
+     - '192823'
+  light:
+     - 'ED5314'
+     - 'FFB92A'
+     - 'FEEB51'
+     - '9BCA3E'
+     - '3ABBC9'
+     - 'E6E6E6'
+  brown:
+     - 'A75C56'
+     - 'AE695A'
+     - 'E89C84'
+     - 'F5C972'
+     - 'EAB06E'
+     - 'C3B274'
+  pink:
+     - 'C5AAF5'
+     - 'A3CBF1'
+     - '79BFA1'
+     - 'F5A352'
+     - 'FB7374'
+     - '423C40'
+
+
+groups:
+  - name: Group 1
+    palette: pack 
+    items:
+      - name: Docker app 1
+        url: /docker1
+        link: http://{docker}/app1/
+        description: My app
+        icon: fa-cloud
+
+      - name: Google
+        url: /google
+        link: http:/www.google.com
+        description: search engine
+        icon: fa-umbrella
+
+
+
+  - name: Group 2
+    palette: pink
+    items:
+      - name: PFsense
+        url: /pfsense
+        link: http://192.168.0.1
+        description: Router & firewal
+        icon: fa-ban
+
+
+      - name: Unifi
+        url: /unifi
+        link: http://192.168.0.10:8080
+        description: Unifi wireless manager
+        icon: fa-wifi
+
+
+      - name: ESXi
+        url: /esxi
+        link: http://192.168.0.100
+        description: ESXI server
+        icon: fa-server
