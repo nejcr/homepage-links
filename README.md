@@ -1,3 +1,19 @@
+# homepage-links
+
+Simple application for showing webpage with configurable links. Useful for homelab or running as part of docker-compose where there are too many web servers/ports running at the same time.
+
+
+
+## Screenshot 
+
+![Screenshot](docs/screenshot.png?raw=true "Screenshot")
+
+
+## Sample configuration
+
+Configuration is stored in `config/config.yml`
+
+```
 title: Sample page
 colors:
   pack:
@@ -75,3 +91,18 @@ groups:
         link: http://192.168.0.50
         description: Synology NAS
         icon: fa-server
+
+
+```
+
+
+
+## Notes
+
+`link` is where user will be redirected to. 
+
+
+Optional `url` gives users ability to use shorter, more meaningful urls. For example, if homepage links is running on http://home.lan, using above config you can use http://home.lan/unify and you'll be automatically redirected to http://192.168.0.12:8080
+
+
+`icon` is  [Font Awesome](http://fontawesome.io/icons/)  name. E.g. `fa-bath` will show [this](http://fontawesome.io/icon/bath/) icon
